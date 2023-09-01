@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividades</title>
+</head>
+
+<body>
+    <h1>Exercícios de HTML</h1>
+
+    <hr>
+
+    <h2>Ex 01</h2>
+
+    <h1>Cabeçalho 1</h1>
+    <h2>Cabeçalho 2</h2>
+    <h3>Cabeçalho 3</h3>
+    <h4>Cabeçalho 4</h4>
+    <h5>Cabeçalho 5</h5>
+    <h6>Cabeçalho 6</h6>
+
+    <hr>
+
+    <h2>Ex 02</h2>
+
+    <strong>Negrito</strong>
+    <em>Itálico</em>
+    Linha Horizontal
+    <hr>
+
+    <h2>Ex 03</h2>
+
+    <hr>
+    <p> 
+        <i>Lorem ipsum</i> dolor sit <u>amet</u> consectetur <b>adipisicing</b> elit. <span style="color: blue">Odit</span> temporibus <span style="color: red">consequuntur</span> <span style="color: yellow">ipsa</span>  vitae, <span style="color: green">aut</span>, <span style="color: purple">inventore</span> rem nesciunt vero nemo aliquam voluptatum, illum animi. Molestias dolore <a href="https://www.google.com.br" target="_blank">laboriosam</a> <a href="https://www.google.com.br" target="_blank">tenetur</a> <a href="https://www.google.com.br" target="_blank">doloremque</a> optio asperiores!
+    </p>
+    <hr>
+
+    <h2>Ex 04</h2>
+
+    <style>
+        table {
+            border-collapse: collapse;
+            border: 1px solid black;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        th[colspan="2"] {
+            background-color: lightgray;
+        }
+    </style>
+
+    <table>
+        <tr>
+            <th colspan="3">Título da Tabela</th>
+        </tr>
+        <tr>
+            <td>Coluna 1-0</td>
+            <td colspan="2">Coluna que ocupa espaço de 2 colunas</td>
+        </tr>
+        <tr>
+            <td>Coluna 2-0</td>
+            <td>Coluna 2-1</td>
+            <td>Coluna 2-2</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h2>Ex 05</h2>
+
+    <table border="1">
+        <tr>
+            <td>1</td><td>2</td><td>3</td>
+        </tr>
+        <tr>
+            <td colspan="2">4</td><td>6</td>
+        </tr>
+        <tr>
+            <td colspan="3">6</td>
+        </tr>
+    </table>
+
+    <hr>
+        
+    <h2>Ex 06</h2>
+    
+    <table border="1">
+        <tr>
+            <td colspan="3"><h1>123</h1></td>
+        </tr>
+        <tr>
+            <td rowspan="2">47</td><td>5</td><td>6</td>
+        </tr>
+        <tr>
+            <td colspan="2">89</td>
+        </tr>
+    </table>
+
+    <hr>
+        
+    <p>
+        A página exibirá três links clicáveis:
+
+        "Link 1" - Leva para "index.php" dentro do seu site.
+        "Google" - Leva para o site "http://www.google.com".
+        "Yahoo" - Leva para o site "http://www.yahoo.com".
+        Os links estão organizados em dois parágrafos separados. O título da página na barra do navegador será "Exercício 4 c)"
+    </p>
+    
+    <hr>
+
+    <h2>Ex 08</h2>
+
+    <form>
+        <div>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required="">
+        </div>
+        
+        <div>
+            <label>Gênero:</label>
+            <input type="radio" id="sexoM" name="sexo" value="M">
+            <label for="sexoM">Masculino</label>
+            
+            <input type="radio" id="sexoF" name="sexo" value="F">
+            <label for="sexoF">Feminino</label>
+        </div>
+        
+        <div>
+            <label for="estadoCivil">Estado Civil:</label>
+            <select id="estadoCivil" name="estadoCivil">
+            <option value="solteiro">Solteiro</option>
+            <option value="casado">Casado</option>
+            <option value="outros">Outros</option>
+            </select>
+        </div>
+        
+        <div>
+            <button type="submit">Enviar</button>
+        </div>
+    </form>
+
+    <hr>
+
+    <h2>Ex 09</h2>
+      
+    <form>
+        <table>
+            <tr>
+                <td>Usuário:</td>
+                <td><input type="text" id="usuario" name="usuario" required></td>
+            </tr>
+            <tr>
+                <td>Senha:</td>
+                <td><input type="password" id="senha" name="senha" required></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><button type="submit">Enviar</button></td>
+            </tr>
+        </table>
+    </form>
+
+    <hr>
+
+    <h2>Ex 10</h2>
+
+    <form>
+        <table>
+            <tr>
+                <td>Usuário:</td>
+                <td><input type="text" id="usuario" name="usuario" required></td>
+                <td>Senha:</td>
+                <td><input type="password" id="senha" name="senha" required></td>
+                <td align="center"><button type="submit">Enviar</button></td>
+            </tr>
+            <tr>
+                <td colspan="5" align="center"><label><input type="checkbox" id="lembrar" name="lembrar"> Lembrar Usuário e Senha</label></td>
+            </tr>
+        </table>
+    </form>
+
+    <hr>
+
+    <h2>Ex 11</h2>
+
+    <form name="form1" method="post" action="">
+        <table border="1" align="center">
+            <tr>
+                <td align="right" valign="top">Usuário:</td>
+                <td><input name="usuario" type="text" id="usuario"></td>
+            </tr>
+            <tr>
+                <td align="right" valign="top">Senha:</td>
+                <td><input name="senha" type="password" id="senha"></td>
+            </tr>
+            <tr>
+                <td align="right" valign="top">Endereço:</td>
+                <td><textarea name="end" rows="5" id="end"></textarea></td>
+            </tr>
+            <tr>
+                <td align="right" valign="top">Idade:</td>
+                <td>
+                    <select name="idade" size="3" id="idade">
+                        <option value="1">menos de 25</option>
+                        <option value="2">entre 25 e 50</option>
+                        <option value="3">mais de 50</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td align="right" valign="top">Sexo:</td>
+                <td>
+                    <label>
+                        <input type="radio" name="sexo" value="m">
+                        Masculino
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="sexo" value="f">
+                        Feminino
+                    </label>
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td align="right" valign="top">Eu concordo:</td>
+                <td><input name="concordo" type="checkbox" id="concordo" value="1"></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><input type="submit" name="Submit" value="Submit"></td>
+            </tr>
+        </table>
+    </form>
+
+    <hr>
+
+    <h2>Ex 12</h2>
+
+    <h1>Minha 1ª Página Web - Exercício 01</h1>
+    <h2>Nome, N° e Turma dos Integrantes</h2>
+    <hr>
+    <p>Colégio Singular Informa</p>
+    <p>Os alunos do <strong>Curso Técnico em Informática</strong>, na disciplina de <em>LGP</em>, iniciaram a edição de <u>Páginas Web</u>. Utilizando a programação <em><strong><u>HTML</u></strong></em>.</p>
+    <hr>
+    <p>Desta forma, em breve, eles serão</p>
+    <h3>Web Designers</h3>
+
+    <hr>
+
+    <h2>Ex 13</h2>
+
+    <h1>Minha 2ª Página Web - Exercício 02</h1>
+    <h2>Nome, N° e Turma dos Integrantes</h2>
+    <hr>
+    <p>Listas Ordenadas</p>
+    <ol>
+        <li>Volkswagen
+            <ol>
+                <li>Gol</li>
+                <li>Parati</li>
+                <li>Golf</li>
+            </ol>
+        </li>
+        <li>Fiat
+            <ol>
+                <li>Uno</li>
+                <li>Palio</li>
+                <li>Stilo</li>
+            </ol>
+        </li>
+    </ol>
+    <hr>
+    <p>Listas Não Ordenadas</p>
+    <ul>
+        <li>General Motors
+            <ul>
+                <li>Celta</li>
+                <li>Vectra</li>
+                <li>Astra</li>
+            </ul>
+        </li>
+        <li>Ford
+            <ul>
+                <li>Ka</li>
+                <li>Fiesta</li>
+                <li>Ecosport</li>
+            </ul>
+        </li>
+    </ul>
+
+    <hr>
+
+    <h2>Ex 14</h2>
+
+    <h1>Minha 3ª Página Web - Exercício 03</h1>
+    <h2>Nome, N° e Turma dos Integrantes</h2>
+    <hr>
+    <p>Listas Aninhadas Mistas - I</p>
+    <ol>
+        <li>Aluno 1
+            <ul>
+                <li>site</li>
+                <li>telefone</li>
+            </ul>
+        </li>
+        <li>Aluno 2
+            <ul>
+                <li>site</li>
+                <li>telefone</li>
+            </ul>
+        </li>
+    </ol>
+    <hr>
+    <p>Listas Aninhadas Mistas - II</p>
+    <ul>
+        <li>Disciplinas do 2º ano de informática
+            <ol>
+                <li>matéria 1</li>
+                <li>matéria 2</li>
+                <li>matéria 3</li>
+            </ol>
+        </li>
+        <li>Disciplinas do 2º ano de informática
+            <ol>
+                <li>matéria 1</li>
+                <li>matéria 2</li>
+                <li>matéria 3</li>
+            </ol>
+        </li>
+    </ul>
+
+    <hr>
+
+    <h2>Ex 15</h2>
+
+    <div>
+        <img src="https://user-images.githubusercontent.com/14011726/94132137-7d4fc100-fe7c-11ea-8512-69f90cb65e48.gif" alt="Homer">
+        <span>Imagem GIF</span>
+    </div>
+    <div>
+        <img src="https://www.cleverfiles.com/howto/wp-content/uploads/2018/03/minion.jpg" alt="Minions">
+        <span>Imagem JPG</span>
+    </div>
+    <div>
+        <img src="https://3.bp.blogspot.com/-ImvdVkA6sd4/TnFJ_aggZJI/AAAAAAAAA8A/QauQ23L3VOs/w1200-h630-p-k-no-nu/%255BFig.+24%255D+Gandalf+luta+com+Balrog.bmp" alt="Gandalf">
+        <span>Imagem BMP</span>
+    </div>
+    <a href="https://github.com/pablopscheidt">
+        <img style="width:100px;" src="https://img.ibxk.com.br/2017/07/13/13160112901226.jpg" alt="Tigre">
+        <span>Link, comprimento 100px</span>
+    </a>
+    <br>
+    <a href="https://github.com/pablopscheidt">
+        <img style="height:50px;" src="https://img.ibxk.com.br/2017/07/13/13160112901226.jpg" alt="Tigre">
+        <span>Link, altura 50px</span>
+    </a>
+
+    <hr>
+
+    <h2>Ex 16</h2>
+
+    <pre>
+        &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+        &lt;head&gt;
+            &lt;title&gt;Exercício 1O&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body bgcolor="#AAAAFF" text="darkblue" link="blue" vlink="lightblue" alink="white"&gt;
+            &lt;h1 align="center"&gt;Utilizando Âncoras&lt;/h1&gt;
+            &lt;h3 align="center"&gt;&lt;font color="white"&gt;Nome, Número e Turma dos Integrantes&lt;/font&gt;&lt;/h3&gt;
+            &lt;a name="topo"&gt;&lt;/a&gt;
+            &lt;a href="#LO"&gt;Lista Ordenada&lt;/a&gt;&lt;br&gt;
+            &lt;a href="#LNO"&gt;Lista Não Ordenada&lt;/a&gt;&lt;br&gt;
+            &lt;a href="#LAO"&gt;Lista Aninhada Ordenada&lt;/a&gt;&lt;br&gt;
+            &lt;a href="#LANO"&gt;Lista Aninhada Não Ordenada&lt;/a&gt;&lt;p&gt;
+            &lt;hr&gt;
+            &lt;a name="LO"&gt;&lt;/a&gt;
+            &lt;h2 align="center"&gt;Lista Ordenada&lt;/h2&gt;
+            &lt;hr&gt;
+            &lt;ol&gt;
+                &lt;li&gt;Curso Técnico em Informática&lt;/li&gt;
+                &lt;li&gt;Curso Técnico em Turismo&lt;/li&gt;
+            &lt;/ol&gt;
+            &lt;a href="#topo"&gt;Volta ao Início&lt;/a&gt;&lt;br&gt;
+            &lt;!-- 2a âncora --&gt;
+            &lt;hr&gt;
+            &lt;a name="LNO"&gt;&lt;/a&gt;
+            &lt;h2 align="center"&gt;Lista Não Ordenada&lt;/h2&gt;
+            &lt;hr&gt;
+            &lt;ul&gt;
+                &lt;li&gt;Curso Técnico em Eletrônica&lt;/li&gt;
+                &lt;li&gt;Curso Técnico em Química&lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;a href="#topo"&gt;Volta ao Início&lt;/a&gt;&lt;br&gt;
+            &lt;!-- 3a âncora --&gt;
+            &lt;hr&gt;
+            &lt;a name="LAO"&gt;&lt;/a&gt;
+            &lt;h2 align="center"&gt;Lista Aninhada Ordenada&lt;/h2&gt;
+            &lt;hr&gt;
+            &lt;ol&gt;
+                &lt;li&gt;Curso Técnico em Informática
+                    &lt;ol&gt;
+                        &lt;li&gt;Manhã&lt;/li&gt;
+                        &lt;li&gt;Noite&lt;/li&gt;
+                    &lt;/ol&gt;
+                &lt;/li&gt;
+                &lt;li&gt;Curso Técnico em Turismo
+                    &lt;ol&gt;
+                        &lt;li&gt;Manhã&lt;/li&gt;
+                        &lt;li&gt;Noite&lt;/li&gt;
+                    &lt;/ol&gt;
+                &lt;/li&gt;
+            &lt;/ol&gt;
+            &lt;a href="#topo"&gt;Volta ao Início&lt;/a&gt;&lt;br&gt;
+            &lt;!-- 4a âncora --&gt;
+            &lt;hr&gt;
+            &lt;a name="LANO"&gt;&lt;/a&gt;
+            &lt;h2 align="center"&gt;Lista Aninhada Não Ordenada&lt;/h2&gt;
+            &lt;hr&gt;
+            &lt;ul&gt;
+                &lt;li&gt;Curso Técnico em Eletrônica
+                    &lt;ul&gt;
+                        &lt;li&gt;Manhã não tem&lt;/li&gt;
+                        &lt;li&gt;Noite&lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/li&gt;
+                &lt;li&gt;Curso Técnico em Química
+                    &lt;ul&gt;
+                        &lt;li&gt;Manhã não tem&lt;/li&gt;
+                        &lt;li&gt;Noite&lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;a href="#topo"&gt;Volta ao Início&lt;/a&gt;&lt;br&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;
+    </pre>
+        
+    <hr>
+
+    <h2 id="topo17">Ex 17</h2>
+        
+    <h1>Listas, Links e Âncoras</h1>
+    <hr>
+    <h2>Nome dos Integrantes</h2>
+    <hr>
+    <ol>
+        <li><u>Nome Completo Aluno 1</u></li>
+        <li><u>Nome Completo Aluno 2</u></li>
+        <li><u>Nome Completo Aluno 3</u></li>
+    </ol>
+    <hr>
+    <h2>Dados Pessoais</h2>
+    <hr>
+    <ol>
+        <li>Apelido do ALuno 1 <ul>
+                <li>Endereço</li>
+                <li>Data de Nascimento</li>
+                <li>Passatempos</li>
+                <li>Enviar <a href="mailto:pablo.pscheidt@unidavi.edu.br">E-Mail</a></li>
+                <a href="#topo17">Voltar ao topo</a>
+            </ul>
+        </li>
+        <li>Apelido do ALuno 2 <ul>
+                <li>Endereço</li>
+                <li>Data de Nascimento</li>
+                <li>Passatempos</li>
+                <li>Enviar <a href="mailto:pablo.pscheidt@unidavi.edu.br">E-Mail</a></li>
+                <a href="#topo17">Voltar ao topo</a>
+            </ul>
+        </li>
+        <li>Apelido do ALuno 3 <ul>
+                <li>Endereço</li>
+                <li>Data de Nascimento</li>
+                <li>Passatempos</li>
+                <li>Enviar <a href="mailto:pablo.pscheidt@unidavi.edu.br">E-Mail</a></li>
+                <a href="#topo17">Voltar ao topo</a>
+            </ul>
+        </li>
+    </ol>
+
+    <hr>
+
+    <h2>Ex 18</h2>
+
+    <table>
+        <caption>Tabela Mesclada</caption>
+        <tr>
+            <td style="width: 10%; text-align: left; background-color: yellow;">A1</td>
+            <td rowspan="2" style="width: 40%; height: 40px; text-align: center; vertical-align: bottom; background-color: white;">A2</td>
+            <td rowspan="2" style="width: 50%; text-align: center; vertical-align: top; background-color: orange;">A3</td>
+            <td rowspan="2" colspan="1" style="background-color: orange;"></td>
+        </tr>
+        <tr>
+            <td rowspan="2" colspan="1" style="background-color: yellow;"></td>
+            <td style="width: 40%; height: 50px; text-align: center; background-color: orange;">B2</td>
+            <td style="width: 30%; text-align: center; background-color: yellow;">B4</td>
+        </tr>
+        <tr>
+            <td style="width: 10%; text-align: right; background-color: orange;">C1</td>
+            <td colspan="2" style="background-color: orange;"></td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <a href="ex19.html" target="_blank"><h2>Ex 19</h2></a>
+
+    <hr>
+
+    <a href="ex20.html" target="_blank"><h2>Ex 20</h2></a>
+
+    <hr>
+
+    <a href="ex21.html" target="_blank"><h2>Ex 21</h2></a>
+
+    <hr>
+
+    <a href="ex22.html" target="_blank"><h2>Ex 22</h2></a>
+
+</body>
+</html>

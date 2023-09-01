@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ex22</title>
+<style>
+  .header {
+    display: grid;
+    grid-template-columns: 20% auto;
+  }
+
+  .img {
+    width: 125px;
+    height: 75px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .body {
+    display: grid;
+    grid-template-columns: 20% auto;
+    column-gap: 2rem;
+  }
+
+  .lateral {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+
+  .item-lateral {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .categoria {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .icon {
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+  }
+
+  .menu ul li {
+    list-style: none;
+    padding-right: 1rem;
+  }
+
+  .menu ul li:not(:last-child) {
+    border-right: 1px solid black;
+  }
+
+  .menu ul {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .main-img {
+    border: 1px solid black;
+    height: 300px;
+  }
+
+  .secondary-img {
+    height: 100px;
+    border: 1px solid black;
+  }
+
+  .produtct-img {
+    height: 150px;
+    width: 150px;
+    border: 1px solid black;
+  }
+
+  .related-produts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+    justify-content: space-evenly;
+  }
+
+  .product {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .secondary-imgs {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .title {
+    font-weight: 600;
+  }
+
+  .footer {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+  }
+</style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <div class="img">LOGO</div>
+        </div>
+        <div style="display: flex; align-items: flex-end; flex-direction: column;">
+            <div>
+                <input type="text" placeholder="Pesquise aqui">
+            </div>
+            <div class="menu">
+                <ul>
+                    <li>Item</li>
+                    <li>Item</li>
+                    <li>Item</li>
+                    <li>Item</li>
+                    <li>Item</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <hr>
+    
+    <div class="body">
+        <div class="lateral">
+            <div>
+                <span>Categorias</span>
+                <hr>
+                <div class="item-lateral">
+                    <div class="categoria">
+                        <div class="icon"></div>
+                        <span>Categoria 1</span>
+                    </div>
+                    <div class="categoria">
+                        <div class="icon"></div>
+                        <span>Categoria 2</span>
+                    </div>
+                    <div class="categoria">
+                        <div class="icon"></div>
+                        <span>Categoria 3</span>
+                    </div>
+                    <div class="categoria">
+                        <div class="icon"></div>
+                        <span>Categoria 4</span>
+                    </div>
+                    <div class="categoria">
+                        <div class="icon"></div>
+                        <span>Categoria 5</span>
+                    </div>
+                    <div class="categoria">
+                        <div class="icon"></div>
+                        <span>Categoria 6</span>
+                    </div>
+                    <div class="categoria">
+                        <div class="icon"></div>
+                        <span>Categoria 7</span>
+                    </div>
+                    <div class="categoria">
+                        <div class="icon"></div>
+                        <span>Categoria 8</span>
+                    </div>
+                    <div class="categoria">
+                        <div class="icon"></div>
+                        <span>Categoria 9</span>
+                    </div>
+                    <div class="categoria">
+                        <div class="icon"></div>
+                        <span>Categoria 10</span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <span>Guias</span>
+                <hr>
+                <div class="item-lateral">
+                    <div>Guia 1</div>
+                    <div>Guia 2</div>
+                    <div>Guia 3</div>
+                    <div>Guia 4</div>
+                    <div>Guia 5</div>
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div>
+                <div class="main-img"></div>
+                <div class="secondary-imgs">
+                    <div class="secondary-img"></div>
+                    <div class="secondary-img"></div>
+                    <div class="secondary-img"></div>
+                </div>
+            </div>
+            <div class="secondary-content">
+                <span>Produtos Relacionados</span>
+                <hr>
+                <div class="related-produts">
+                    <div class="product">
+                        <div class="produtct-img"></div>
+                        <span>Nome 1</span>
+                        <span>Valor 1</span>
+                    </div>
+                    <div class="product">
+                        <div class="produtct-img"></div>
+                        <span>Nome 2</span>
+                        <span>Valor 2</span>
+                    </div>
+                    <div class="product">
+                        <div class="produtct-img"></div>
+                        <span>Nome 3</span>
+                        <span>Valor 3</span>
+                    </div>
+                    <div class="product">
+                        <div class="produtct-img"></div>
+                        <span>Nome 4</span>
+                        <span>Valor 4</span>
+                    </div>
+                    <div class="product">
+                        <div class="produtct-img"></div>
+                        <span>Nome 5</span>
+                        <span>Valor 5</span>
+                    </div>
+                    <div class="product">
+                        <div class="produtct-img"></div>
+                        <span>Nome 6</span>
+                        <span>Valor 6</span>
+                    </div>
+                    <div class="product">
+                        <div class="produtct-img"></div>
+                        <span>Nome 7</span>
+                        <span>Valor 7</span>
+                    </div>
+                    <div class="product">
+                        <div class="produtct-img"></div>
+                        <span>Nome 8</span>
+                        <span>Valor 8</span>
+                    </div>
+                    <div class="product">
+                        <div class="produtct-img"></div>
+                        <span>Nome 9</span>
+                        <span>Valor 9</span>
+                    </div>
+                    <div class="product">
+                        <div class="produtct-img"></div>
+                        <span>Nome 10</span>
+                        <span>Valor 10</span>
+                    </div>
+                    <div class="product">
+                        <div class="produtct-img"></div>
+                        <span>Nome 11</span>
+                        <span>Valor 11</span>
+                    </div>
+                    <div class="product">
+                        <div class="produtct-img"></div>
+                        <span>Nome 12</span>
+                        <span>Valor 12</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <hr>
+    
+    <div class="footer">
+        <div>
+            <span class="title">Categorias</span>
+            <div>
+                <span>Categoria 1</span>
+                <span>Categoria 2</span>
+                <span>Categoria 3</span>
+                <span>Categoria 4</span>
+                <span>Categoria 5</span>
+            </div>
+        </div>
+    
+        <div>
+            <span class="title">Menu</span>
+            <div>
+                <span>Menu 1</span>
+                <span>Menu 2</span>
+                <span>Menu 3</span>
+                <span>Menu 4</span>
+                <span>Menu 5</span>
+            </div>
+        </div>
+    
+        <div>
+            <span class="title">Guia</span>
+            <div>
+                <span>Guia 1</span>
+                <span>Guia 2</span>
+                <span>Guia 3</span>
+                <span>Guia 4</span>
+                <span>Guia 5</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
